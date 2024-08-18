@@ -1,0 +1,86 @@
+/* Responsive CSS */
+
+/* Media Query 1170px */
+@media (max-width: 1170px) {
+
+    /* General CSS */
+    .section-subtitle {
+        max-width: 60%;
+    }
+
+    /* Banner Section */
+    .banner_section .carousel-item {
+        height: 90vh;
+    }
+}
+
+/* Media Query 991px */
+@media (max-width: 991px) {
+
+    /* General CSS */
+    .section-subtitle {
+        max-width: 70%;
+    }
+
+    .about .banner_section,
+    .add .banner_section,
+    .delete .banner_section,
+    .get .banner_section,
+    .update .banner_section,
+    .recommend .banner_section,
+    .distributors .banner_section {
+        padding-top: 12.5rem;
+        padding-bottom: 3rem;
+    }
+
+    /* Banner Section */
+    .banner_section .carousel-item {
+        height: 80vh;
+    }
+}
+
+/* Media Query 767px */
+@media (max-width: 767px) {
+
+    /* General CSS */
+    body,
+    html {
+        font-size: 14px; /* Adjusting base font size */
+    }
+
+    .section-subtitle {
+        max-width: 80%;
+    }
+
+    /* Banner Section */
+    .banner_section {
+        min-height: 70vh;
+    }
+
+    .banner_section .carousel-item {
+        height: 70vh;
+    }
+}
+
+/* Media Query 590px */
+@media (max-width: 590px) {
+
+    /* General CSS */
+    body,
+    html {
+        font-size: 12px; /* Adjusting base font size */
+    }
+
+    .section-subtitle {
+        max-width: 90%;
+    }
+
+    /* Banner Section */
+    .banner_section {
+        min-height: 60vh;
+    }
+
+    .banner_section .carousel-item {
+        height: 60vh;
+    }
+}

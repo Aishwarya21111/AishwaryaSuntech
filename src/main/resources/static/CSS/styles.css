@@ -1,0 +1,623 @@
+/* static/css/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Ensure html and body take full width */
+}
+header#full_nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #FF1493; /* Set the background color to pink */
+}
+
+.root {
+    --primary-font: 'Barlow Condensed', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 7rem; /* Adjusted size */
+    line-height: 1.4;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize; /* Corrected property */
+    font-family: var(--primary-font);
+}
+
+h2 {
+    color: white;
+    font-size: 4rem; /* Adjusted size */
+    font-weight: 600;
+    color:#1A6DFF;
+    display: inline-block;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--primary-text);
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primary-text);
+}
+
+p {
+    font-size: 1rem; /* Adjusted size */
+    line-height: 1.6;
+    margin-top: 1rem;
+    color: white;
+    font-family: var(--secondary-font);
+}
+
+embed, iframe, img, object {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a, a:active, a:focus, a:hover, button {
+    text-decoration: none;
+    outline: 0;
+}
+
+li a {
+    color: white;
+}
+
+a:hover, button:hover {
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.navbar {
+    background-color: #FF1493; /* Set the background color to pink */
+}
+
+.navbar a {
+    color: white; /* Set the link color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Set the font size */
+    margin-right: 15px; /* Add space between links */
+}
+
+.navbar img {
+    width: 50px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav-link, .dropdown-item {
+    color: white; /* Set the text color to white */
+}
+
+.nav-link:hover, .dropdown-item:hover {
+    background-color: #ff99cc; /* Set a darker pink for hover effect */
+}
+
+.dropdown-menu {
+    background-color: #FF1493; /* Set the dropdown background color to pink */
+}
+
+.form-control {
+    border-color: #ff99cc; /* Set a matching border color for the input field */
+}
+
+.btn-outline-success {
+    color: black;
+    background-color: pink;
+    border-color: black;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: black; /* Match the button's default background color */
+    border-color: #ff99cc; /* Match the button's default border color */
+}
+
+:-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+}
+
+.main-btn {
+    position: relative;
+    color: white;
+    background: linear-gradient(to right, #0f7404, #5cb917);
+    z-index: 1;
+    overflow: hidden;
+    border: 0.2rem solid var(--bg-white);
+    border-radius: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.main-btn:hover {
+    background: white;
+    color: pink;
+    border: 0.2rem solid pink;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primary-text);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.section-subtitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-text);
+    font-family: var(--secondary-font);
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.about .banner_section,
+.add .banner_section,
+.delete .banner_section,
+.get .banner_section,
+.contact .banner_section,
+.update .banner_section,
+.recommend .banner_section,
+.distributors .banner_section {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    min-height: auto;
+}
+
+.banner_section {
+    background: url('../Images/banner-slide/top-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+.banner_section .carousel-item {
+    padding: 1rem;
+    height: 90vh;
+    }
+.banner_section .carousel-caption {
+    position: absolute; /* Ensure it is positioned relative to its nearest positioned ancestor */
+    top: 40%; /* Position from the top */
+    left: 3%; /* Position from the left */
+    width: 94%; /* Ensure it has the desired width, accounting for left margin */
+    text-align: left; /* Align text to the left */
+    bottom: 0; /* Ensure it's anchored to the bottom of its container if needed */
+    transform: translateY(-50%); /* Optionally, adjust vertical positioning if necessary */
+}
+.feature_section{
+padding:1rem;
+margin:1rem;
+margin-co
+border: 1rem solid  #03262c ;
+margin-bottom: 1rem; /* Adjust the bottom margin */
+padding-bottom: 0rem;
+padding-bottom:0rem;
+
+
+    }
+
+
+.feature_section .features-box {
+    background-color: transparent;
+    border: 0.15rem solid #E6ABFF;
+    padding: 4rem 0;
+    transition: all 0.3s;
+}
+.feature_section .features-box .features-icon-border {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.2rem solid  #E6ABFF;
+    padding: 0.5rem;
+    display: inline-block;
+}
+.feature_section .features-box .features-icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: ;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature_section .features-box .features-icon img {
+    width: 3.2rem;
+}
+
+.feature_section .features-box h3 {
+
+    margin-top: 1.5rem;
+    font-family: var(--secondary-font);
+    font-size:1rem;
+    color:black;
+}
+
+.feature_section .features-box:hover {
+    background-color: #03262c;
+    border-color: #03262c;
+}
+.feature_section .features-box:hover h3 {
+
+    color: #fff;
+
+}
+
+.feature_section .features-box:hover .features-icon-border {
+    border-color: #36970e;
+}
+.feature_section .features-box::after {
+    content: ''; /* No text content needed */
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 0;
+    width: 100%;
+    height: 0.2rem; /* Thickness of the line */
+    background-color: black; /* Color of the line */
+}
+
+/* About Section */
+
+.landing_about_section {
+ background: url('../Images/banner-slide/about-banner.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 9rem 0;
+
+}
+
+.landing_about_section p {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* footer */
+.footer_wrapper {
+    background: url('../images/banner-slide/footer-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+.footer_wrapper h5 {
+    text-transform: capitalize;
+    color: #FF1493;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.footer_wrapper ul li {
+    margin-bottom: .5rem;
+    list-style: none;
+}
+
+.footer_wrapper .company_details {
+    font-size: 1rem;
+}
+
+.footer_wrapper .contact-info li a {
+    color: white;
+    font-size: 1rem;
+}
+
+.footer_wrapper .link-widget li a,
+.footer_wrapper p {
+    color: white;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.footer_wrapper .link-widget li a::before {
+    content: '\f105';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.3rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.footer_wrapper .link-widget li a:hover {
+    margin-left: .625rem;
+    color: magenta;
+}
+
+.footer_wrapper .social-network a {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: .5rem;
+    line-height: 3.2rem;
+    font-size: 1rem;
+    display: inline-block;
+    border: .125rem solid var(--text-gray);
+    color: #FF1493;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.footer_wrapper .social-network a:hover {
+    background-color:magenta;
+    border-color:magenta ;
+    color:white ;
+    box-shadow: 0 .625rem .9375rem 0 rgb(0 0 0 / 10%);
+    transform: translateY(-0.1875rem);
+}
+
+.footer_wrapper .form-control {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer_wrapper .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: white;
+}
+
+.footer_wrapper .copyright-section {
+    background-color:   black;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.footer_wrapper .copyright-section p {
+    margin-top: 0;
+    padding: 3rem 0;
+    line-height: 0;
+}
+
+.footer_wrapper .copyright-section a {
+    color: pink;
+    font-weight: 600;
+}
+
+
+.about_section .section-subtitle,
+.about_section .about-details p {
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #002D62; /* Set text color */
+    font-family: 'Open Sans', sans-serif; /* Set new font */
+}
+.about_section .section-subtitle,
+.about_section .about-details h3 {
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #002D62; /* Set text color */
+    font-family: 'Open Sans', sans-serif;
+   ]/* Add spacing between words */
+     text-align: justify; /* Justify the text */
+    padding:0;/* Set new font */
+}
+
+.separation-line {
+    border: none; /* Remove default border */
+    border-top: 2px solid #002D62; /* Adjust thickness and color */
+    margin: 20px 0; /* Add spacing around the line */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+
+.contact_section {
+    padding: 5rem 0;
+    background-color: #f8c8dc; /* Set the background color to pink */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #002D62;
+     font-family: /* Change color to white for better contrast */
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: white; /* Change color to white for better contrast */
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form .form-control {
+    border: 2px solid #ced4da;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: border-color 0.3s;
+}
+
+.contact-form .form-control:focus {
+    border-color: #002D62;
+    box-shadow: none;
+}
+
+.contact-form .btn.main-btn {
+    background-color: #002D62;
+    color: white;
+    border-radius: 5px;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.contact-form .btn.main-btn:hover {
+    background-color: #0056b3;
+}
+
+.info-box {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box li {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.info-box i {
+    color: #002D62;
+    margin-right: 1rem;
+    font-size: 2rem; /* Increase icon size */
+}
+
+.info-box p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #002D62; /* Ensure text is readable */
+}
+
+.info-box a {
+    font-size: 1rem;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+
+/* Style for the table */
+.prod_table {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+thead {
+    background-color: #f8f9fa;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+table th, table td {
+    text-align: left;
+    vertical-align: middle;
+}
+
+table td {
+    font-size: 14px;
+    color: #333;
+}
+
+table thead th {
+    font-weight: bold;
+    color: #495057;
+}
+
+table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+}
+.rec{
+   color : black;
+}
+
+
+
+
+
+
+
+
